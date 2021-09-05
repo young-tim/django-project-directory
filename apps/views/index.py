@@ -24,11 +24,9 @@ from django.views import View
 
 class IndexView(View):
     def get(self, request, *args, **kwargs):
-        print(request)
         return render(request, 'index.html')
 
     def post(self, request, *args, **kwargs):
-        print(request)
         context = {
             "code": 200,
             "msg": "OK",
